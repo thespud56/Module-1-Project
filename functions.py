@@ -29,6 +29,7 @@ def manipulatebudgetdata(df):
     return df
 
 def createquint(df):
+    import pandas as pd
     """Creates quintiles based on ROI"""
     names = ['low', 'somewhat low', 'moderate', 'somewhat high', 'high']
     pd.qcut(df['worldwide_roi'], 5, labels=names)
@@ -45,6 +46,7 @@ def executemerge(df1, df2):
     return df_new
 
 def creatematrix(df):
+    import pandas as pd
     """Creates matrix of dummy variables from genres"""
     genreList = []
     for el in df['genres'].map(lambda x: str(x).split(",")):
@@ -52,7 +54,7 @@ def creatematrix(df):
             genreList.append(el2)
     genreCols = set(genreList)
     genres = pd.DataFrame(columns = genreCols)
-    blankMatrix = pd.concat([df, genres], axis = 1)
+    blankMatrix = pd.concat([df, genres], axis=1)
     for row_index, row in df.iterrows():
         for key, value in (dict(row)).items():
             if key == 'genres':
