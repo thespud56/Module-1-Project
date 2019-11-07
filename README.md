@@ -8,10 +8,12 @@ We have agreed that ROI can best be justified through the analysis of the movie 
 
 **Team member responsibilities**:
 Nicole Bills:
-Responsibilities include featuring engineering, data analysis, visualizations, data interpretation and recommendation. 
 
-Stuart Murphy
-Responsibilities include feature selection, data cleaning, creating functions for data cleaning, data interpretation and recommendation. 
+Responsibilities include featuring engineering, data analysis, visualizations, data interpretation, and recommendation. 
+
+Stuart Murphy:
+
+Responsibilities include feature selection, data cleaning, creating functions for data cleaning, data interpretation, and recommendation. 
 
 
 **Summary of files**:
